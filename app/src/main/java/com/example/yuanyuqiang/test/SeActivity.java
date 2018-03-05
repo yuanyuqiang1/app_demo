@@ -22,9 +22,13 @@ public class SeActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
+            /*    Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.baidu.com"));
-                startActivity(intent);
+                startActivity(intent);*/
+            Intent intent = new Intent();
+            intent.putExtra("data","success!");
+            setResult(RESULT_OK,intent);
+            finish();
             }
         });
     }

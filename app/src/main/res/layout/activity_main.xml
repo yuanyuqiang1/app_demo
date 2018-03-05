@@ -8,8 +8,16 @@
     tools:context="com.example.yuanyuqiang.test.MainActivity">
 
     <Button
+        android:textAllCaps="false"
         android:text="skip"
         android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textAllCaps="false"
+        android:text="skip"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
